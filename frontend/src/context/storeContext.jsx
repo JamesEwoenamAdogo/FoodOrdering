@@ -10,7 +10,7 @@ const StoreContextProvider = (props)=>{
     const [token, setToken]= useState("")
     const [cartItems, setCartItems] =useState({})
     const [food_list,setFood_list] = useState([])
-    const url = "http://localhost:8000"
+    const url = "https://foodordering-c6ex.onrender.com"
 
     const addCartItems=async (itemId)=>{
         if(!cartItems[itemId]){
