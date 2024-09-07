@@ -11,7 +11,9 @@ dotenv.config()
 
 const app= express();
 app.use(express.json());
-app.use(cors({}));
+app.use(cors({
+    origin:"https://food-ordering-two-chi.vercel.app"
+}));
 app.use("/images", express.static("uploads"))
 
 const PORT = process.env.PORT
