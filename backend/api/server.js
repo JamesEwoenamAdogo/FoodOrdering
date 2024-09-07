@@ -20,6 +20,7 @@ app.listen(PORT, ()=>{
 
 })
 connectDb()
+app.get("/test",(req,res)=>{ res.send("test")})
 app.use("/api/v1",router);
 app.use("/api/v1",userRouter)
 app.use("/api/v1",cartRouter)
