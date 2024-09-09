@@ -173,18 +173,7 @@ const LoginPopUp = ({setShowLogin}) => {
                 
             </div>
             <button ref={upddateWidth} type='submit'>{currState=="Sign-Up"? "Create account":"Login"}</button>
-            <div className="continue-with-google">
-            <GoogleLogin width= {width} size="large" text='signin' logo_alignment='left'
-                        onSuccess={googleAuth}
-                        onError={() => {
-                            console.log('Login Failed');
-                        }}
-                        onClick={()=>{window.location.reload()}}
-                        
-                       
-                        
-            />
-            </div>
+          
             
 
 
